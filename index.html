@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AS Physics Trainer</title>
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<script type="module" src="app.js"></script></head><body>
+<div id="gate" class="gate hidden"><div class="login"><div class="brand">◉ &nbsp; AS PHYSICS TRAINER</div><h1>Welcome back</h1><p>Enter the class access code to continue.</p><form id="gateForm"><input id="pass" type="password" placeholder="Class access code" autocomplete="off" required><button>Enter trainer →</button></form><p id="gateError" class="error"></p><small>This is a convenience screen, not secure authentication. The public site and its data remain accessible.</small></div></div>
+<div id="app" class="shell hidden">
+<aside class="sidebar"><div class="brand">◉ &nbsp; AS PHYSICS <small>9702 TRAINER · WEB v0.5</small></div>
+<div class="sectionlabel">CHAPTERS <span id="selectionCount"></span></div><div class="chapters" id="chapters"></div>
+<div class="row"><button class="quiet" id="selectAll">All</button><button class="quiet" id="selectNone">None</button></div>
+<div class="sectionlabel">PAPER</div><div class="row"><label><input type="checkbox" id="paper1" checked> P1</label><label><input type="checkbox" id="paper2" checked> P2</label></div>
+<button class="primary generate" id="generate">Generate question →</button>
+<div class="row"><button id="previous" class="quiet">← Previous</button><button id="historyBtn" class="quiet">History</button></div>
+<div class="row"><button id="favourite" class="quiet">☆ Favourite</button><button id="reset" class="quiet">Reset seen</button></div>
+<div class="sectionlabel">PDF LIBRARY</div><label class="filebtn">Choose PDF folder <input type="file" id="folder" webkitdirectory directory multiple accept=".pdf"></label>
+<label class="filebtn">Or select PDF files <input type="file" id="files" multiple accept=".pdf"></label>
+<div id="fileStatus" class="hint">No PDF library loaded. Files remain on this device.</div>
+<div class="sidebarfoot">History & favourites are saved in this browser. PDFs are never uploaded.</div>
+</aside>
+<main class="main"><header class="top"><div><div class="eyebrow">CAMBRIDGE INTERNATIONAL AS LEVEL</div><h1 id="heading">Current, p.d. and resistance</h1><div class="subtitle" id="subheading">Choose a question to begin.</div></div><span class="topright">Practice workspace</span></header>
+<div class="toolbar"><div class="badges"><span id="paperBadge">P2</span><span id="marksBadge">— marks</span><span id="chapterBadge">Chapter 8</span></div><div class="toolbarRight"><span id="progress"></span></div></div>
+<div class="tabs"><button class="tab active" data-tab="qp">Question</button><button class="tab" data-tab="ms">Official mark scheme</button><button class="tab" data-tab="solution">Explained solution</button><div class="zoom"><button id="zoomOut">−</button><span id="zoomLabel">100%</span><button id="zoomIn">+</button></div></div>
+<div id="viewer" class="viewer"><div class="empty"><div class="emptyicon">∑</div><h2>Ready to practise?</h2><p>Select Chapter 8 and click <strong>Generate question</strong>.<br>To see original papers, select your local PDF folder.</p></div></div>
+<footer><span id="status">Ready</span><span>Original PDFs stay on your computer</span></footer>
+</main></div>
+<dialog id="historyDialog"><div class="dialogtop"><h2>Question history</h2><button id="closeHistory">✕</button></div><div id="historyList"></div></dialog>
+</body></html>
