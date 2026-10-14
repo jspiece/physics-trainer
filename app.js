@@ -51,7 +51,16 @@ async function render(){const token=++renderToken,view=$("viewer");view.innerHTM
  if(!view.children.length)view.textContent="No pages available for this reference.";
  }catch(e){view.innerHTML=`<div class="empty">Could not open PDF: ${esc(e.message)}</div>`}}
 function generate(){const p=pool().filter(q=>!seen.has(q.id));if(!p.length){alert(pool().length?"All matching questions have been seen. Use Reset seen to start again.":"No questions indexed for this chapter/paper selection.");return}
- const q=p[Math.floor(Math.random()*p.length)];seen.add(q.id);open(q)}
+ let choices=p;
+ if(mode==="P1" && p.length>1){
+   const recent=history.slice(-8).map(id=>questions.find(x=>x.id===id)).filter(x=>x&&paper(x)==="P1");
+   // Prefer a different question family. If the pool contains only one family,
+   // retain the full pool rather than suppressing valid questions.
+   const recentGroups=new Set(recent.slice(-3).map(x=>x.mcq_group).filter(Boolean));
+   const diverse=p.filter(x=>!x.mcq_group || !recentGroups.has(x.mcq_group));
+   if(diverse.length)choices=diverse;
+ }
+ const q=choices[Math.floor(Math.random()*choices.length)];seen.add(q.id);open(q)}
 function loadFiles(list){let count=0;for(const f of list){if(f.name.toLowerCase().endsWith(".pdf")){files.set(f.name.toLowerCase(),f);count++}}$("fileStatus").textContent=`${files.size} PDF files ready locally (this browser tab).`;if(current)render()}
 function showHistory(){const list=history.map(id=>questions.find(q=>q.id===id)).filter(Boolean).reverse();$("historyList").innerHTML=list.map(q=>`<button class="historyitem" data-id="${esc(q.id)}">${favs.has(q.id)?"★ ":""}${esc(q.source)} · Q${esc(q.question)} · ${esc(q.topic||"")}</button>`).join("")||"<p>No history yet.</p>";
  document.querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>{open(questions.find(q=>q.id===b.dataset.id),false);$("historyDialog").close()});$("historyDialog").showModal()}
@@ -84,11 +93,21 @@ async function renderMcq(token,view){
  if(!f){view.innerHTML='<div class="empty"><h2>Local Paper 1 PDF not found</h2><p>Expected: <strong>'+esc(q.qp_file)+'</strong></p><p>Connect the saved PDF folder or choose your local Question Paper PDFs. Nothing is uploaded.</p></div>';return}
  const done=attempts[q.id];
  view.innerHTML='<div class="mcq-work"><div class="mcq-top"><strong>Question '+esc(q.question)+'</strong><span>Choose ONE correct answer · 1 mark</span></div><div id="mcqPictures" class="mcq-pictures"><p>Loading original Cambridge question…</p></div><div class="mcq-actions"><div class="mcq-options">'+["A","B","C","D"].map(a=>'<button data-answer="'+a+'" class="'+(done?(a===q.answer?"is-correct":a===done&&done!==q.answer?"is-wrong":""):"")+'" '+(done?"disabled":"")+'> '+a+' </button>').join("")+'</div><div id="mcqFeedback" class="mcq-feedback"></div><button id="mcqNext" class="primary">Next MCQ →</button></div></div>';
- const feedback=$("mcqFeedback");if(done)feedback.textContent=done===q.answer?"✓ Correct!":"Not quite. The correct answer is "+q.answer+".";
+ const feedback=$("mcqFeedback");
+ function showMcqFeedback(choice){
+   feedback.textContent=choice===q.answer?"✓ Correct!":"Not quite. The correct answer is "+q.answer+".";
+   const panel=document.createElement("div");panel.className="mcq-explanation";
+   const heading=document.createElement("strong");heading.textContent="Why?";panel.append(heading);
+   const explanation=document.createElement("p");
+   explanation.textContent=q.mcq_explanation||"A question-specific explanation is not yet available for this MCQ. Compare the correct option with the original question and ask your teacher about any uncertainty.";
+   panel.append(explanation);feedback.append(panel);
+   if(q.mcq_explanation)window.MathJax?.typesetPromise?.([explanation]).catch(console.warn);
+ }
+ if(done)showMcqFeedback(done);
  else document.querySelectorAll("[data-answer]").forEach(b=>b.onclick=()=>{
     if(attempts[q.id])return;
     attempts[q.id]=b.dataset.answer;save();for(const x of document.querySelectorAll("[data-answer]")){x.disabled=true;x.classList.toggle("is-correct",x.dataset.answer===q.answer);x.classList.toggle("is-wrong",x.dataset.answer===b.dataset.answer&&b.dataset.answer!==q.answer)}
-    feedback.textContent=b.dataset.answer===q.answer?"✓ Correct!":"Not quite. The correct answer is "+q.answer+".";
+    showMcqFeedback(b.dataset.answer);
  });
  $("mcqNext").onclick=generate;
  try{
