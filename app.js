@@ -160,5 +160,5 @@ function init(){const cfg=window.TRAINER_CONFIG||{};const unlock=()=>{$("gate").
  document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
  $("zoomIn").onclick=()=>{scale=Math.min(2.8,scale+.2);$("zoomLabel").textContent=Math.round(scale/1.15*100)+"%";if(tab!=="solution")render()};
  $("zoomOut").onclick=()=>{scale=Math.max(.5,scale-.2);$("zoomLabel").textContent=Math.round(scale/1.15*100)+"%";if(tab!=="solution")render()};
- const last=questions.find(q=>q.id===history[history.length-1]);if(last)open(last,false);stats()}
+ const last=questions.find(q=>q.id===history[history.length-1]);if(last&&paper(last)===mode)open(last,false);else setMode(mode);stats()}
 fetch("./questions.json").then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(q=>{questions=q;init()}).catch(e=>{$("gate").classList.remove("hidden");$("gate").innerHTML='<div class="login"><h2>Launch via a local web server</h2><p>Run <code>start_local_server.bat</code> on Windows, then open http://localhost:8000. GitHub Pages will work directly.</p></div>';console.error(e)});
