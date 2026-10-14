@@ -23,3 +23,9 @@
 .mode-p1 .tabs{display:none}
 .mode-p1 .viewer{border-radius:12px}
 @media(max-width:650px){.mcq-options{gap:5px}.mcq-options button{padding:11px}.mcq-top{display:block}}
+
+/* v0.8 — post-answer MCQ teaching explanation */
+.mcq-explanation{max-width:730px;margin:11px auto 0;padding:15px 18px;text-align:left;background:#eff5ff;border-left:4px solid #3979f6;border-radius:8px;color:#213858;font-size:14px;line-height:1.65;font-weight:400}
+.mcq-explanation strong{font-size:13px;color:#215bad;display:block;margin-bottom:5px}
+.mcq-explanation p{margin:0;color:#213858;font-weight:400}
+.mcq-explanation mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden}
