@@ -239,11 +239,24 @@ function updateProgressPanel(){
   const total=mcqSession?.answers.length||0,ok=sessionCorrect(),limit=mcqSession?.limit||Math.min(SESSION_TARGET,sessionAvailable());
   const pct=total?Math.round(100*ok/total):0;
   const historical=sessions.length;
-  bar.innerHTML='<div><strong>MCQ session</strong><span>'+total+'/'+limit+' answered</span><span>'+ok+'/'+total+' correct</span><span>'+pct+'% accuracy</span></div><div class="session-track"><i style="width:'+(limit?100*total/limit:0)+'%"></i></div><small>'+historical+' completed session(s) saved in this browser'+(mcqSession?.ended?' · Session finished':'')+'</small>';
+  bar.innerHTML='<div><strong>MCQ session</strong><span>'+total+'/'+limit+' answered</span><span>'+ok+'/'+total+' correct</span><span>'+pct+'% accuracy</span></div><div class="session-track"><i style="width:'+(limit?100*total/limit:0)+'%"></i></div><small>'+historical+' completed session(s) saved in this browser <button class="saved-sessions" id="savedSessionsButton">View results</button>'+(mcqSession?.ended?' · Session finished':'')+'</small>';
+  $("savedSessionsButton").onclick=showSavedSessions;
  }else{
   const grades=Object.values(paper2Grades),done=grades.length,points=grades.reduce((sum,g)=>sum+Number(g.score||0),0),max=grades.reduce((sum,g)=>sum+Number(g.max||0),0);
   bar.innerHTML='<div><strong>Paper 2 self-assessment</strong><span>'+done+' graded</span><span>'+(max?Math.round(points/max*100)+'% of marks':'No marks yet')+'</span></div><small>Mark your own answers using the original mark scheme.</small>';
  }
+}
+function showSavedSessions(){
+ const rows=sessions.slice().reverse().map(s=>{
+ const date=new Date(s.date).toLocaleDateString();
+ const total=s.answers.length,wrong=s.answers.filter(a=>!a.correct).length;
+ return '<div class="saved-session-row"><strong>'+esc(date)+'</strong><span>Ch. '+esc(s.chapters.join(", "))+'</span><span>'+s.correct+'/'+total+' correct ('+Math.round(100*s.correct/Math.max(1,total))+'%)</span><span>'+wrong+' to review</span></div>';
+ }).join("");
+ const dialog=document.createElement("dialog");dialog.className="saved-sessions-dialog";
+ dialog.innerHTML='<h2>My MCQ session history</h2><p>Saved on this browser only.</p>'+(rows||'<p>No completed sessions yet.</p>')+'<button id="closeSessions">Close</button>';
+ document.body.append(dialog);dialog.showModal();
+ dialog.querySelector("#closeSessions").onclick=()=>dialog.close();
+ dialog.onclose=()=>dialog.remove();
 }
 function renderPaper2Grade(){
  const box=$("paper2Assessment");if(!box)return;
