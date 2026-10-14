@@ -29,3 +29,24 @@
 .mcq-explanation strong{font-size:13px;color:#215bad;display:block;margin-bottom:5px}
 .mcq-explanation p{margin:0;color:#213858;font-weight:400}
 .mcq-explanation mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden}
+
+/* v0.9 — personal learning progress and self-assessment */
+.student-progress{background:white;border:1px solid #e0e7f3;border-radius:10px;padding:13px 16px;margin:-3px 0 13px;box-shadow:0 3px 10px #17223b08}
+.student-progress>div:first-child{display:flex;align-items:center;gap:18px;flex-wrap:wrap;font-size:12px}
+.student-progress>div:first-child strong{font-size:13px;color:#224d92}
+.student-progress>div:first-child span{color:#435675}
+.student-progress small{display:block;color:#8391a8;font-size:11px;margin-top:7px}
+.session-track{height:7px;border-radius:20px;background:#eaf0f7;overflow:hidden;margin-top:9px}
+.session-track i{display:block;height:100%;background:#3982f5;border-radius:20px;transition:width .2s ease}
+.session-summary{max-width:710px;margin:25px auto;text-align:center;line-height:1.65}
+.session-summary h2{font-size:24px}.session-summary .big-score{font-size:60px;color:#2368d2;font-weight:800}
+.session-summary .review-question{display:block;text-align:left;width:100%;margin:7px auto;padding:11px 14px;background:#f5f8ff;border:1px solid #dfe7f6}
+.session-summary #newSessionButton{margin:20px 0;padding:13px 24px}
+.paper2-assessment{padding:18px 20px;background:white;border:1px solid #dde7f5;border-radius:10px;margin-top:12px;color:#334761}
+.paper2-assessment h3{margin:0 0 8px;font-size:15px;color:#235bad}.paper2-assessment p{font-size:12px;margin:0 0 15px;color:#6b7890}
+.paper2-assessment label{font-size:13px;font-weight:600}
+.paper2-assessment input[type=number]{width:85px;padding:8px;margin-left:8px;border:1px solid #cdd8e9;border-radius:6px}
+.paper2-assessment .paper2-review{margin:0 12px;display:inline-flex;gap:6px;align-items:center}
+.paper2-assessment #saveP2Grade{background:#e9f1ff;color:#2458ae;border:1px solid #bdd1f5;margin:0 9px}
+.paper2-assessment #gradeStatus{font-size:12px;color:#20855d}
+@media(max-width:850px){.student-progress>div:first-child{gap:9px}.paper2-assessment .paper2-review{display:flex;margin:12px 0}}
