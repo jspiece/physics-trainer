@@ -148,7 +148,7 @@ function setMode(m){
 async function renderMcq(token,view){
  const q=current,f=pdfFile(q.qp_file);
  if(!f){view.innerHTML='<div class="empty"><h2>Local Paper 1 PDF not found</h2><p>Expected: <strong>'+esc(q.qp_file)+'</strong></p><p>Connect the saved PDF folder or choose your local Question Paper PDFs. Nothing is uploaded.</p></div>';return}
- const done=mcqSession?.answers.find(a=>a.id===q.id)?.choice||attempts[q.id];
+ const done=mcqSession?.answers.find(a=>a.id===q.id)?.choice;
  view.innerHTML='<div class="mcq-work"><div class="mcq-top"><strong>Question '+esc(q.question)+'</strong><span>Choose ONE correct answer · 1 mark</span></div><div id="mcqPictures" class="mcq-pictures"><p>Loading original Cambridge question…</p></div><div class="mcq-actions"><div class="mcq-options">'+["A","B","C","D"].map(a=>'<button data-answer="'+a+'" class="'+(done?(a===q.answer?"is-correct":a===done&&done!==q.answer?"is-wrong":""):"")+'" '+(done?"disabled":"")+'> '+a+' </button>').join("")+'</div><div id="mcqFeedback" class="mcq-feedback"></div><button id="mcqNext" class="primary">Next MCQ →</button></div></div>';
  const feedback=$("mcqFeedback");
  function showMcqFeedback(choice){
