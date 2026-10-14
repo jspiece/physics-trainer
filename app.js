@@ -4,6 +4,16 @@ const $=id=>document.getElementById(id);
 const names=["Kinematics","Accelerated motion","Dynamics","Forces, vectors & moments","Work, energy & power","Momentum","Matter & materials","Current, p.d. & resistance","Kirchhoff's laws","Resistance & resistivity","Practical circuits","Waves","Superposition","Stationary waves","Atomic & particle physics"];
 const KEY="mms_physics_web_v05";
 let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")}catch{}
+// v1.0: show all chapters for first-time users and prior single-chapter pilots.
+// Keep customised multi-chapter selections unchanged.
+if(!saved.allChaptersRollout){
+ const old=Array.isArray(saved.selected)?saved.selected.map(Number):[];
+ if(old.length===0||(old.length===1&&(old[0]===8||old[0]===9))){
+  saved.selected=Array.from({length:15},(_,i)=>i+1);
+ }
+ saved.allChaptersRollout=true;
+ localStorage.setItem(KEY,JSON.stringify(saved));
+}
 // Initial chapter-9 classroom rollout: migrate old Chapter-8-only preference once.
 if(!saved.ch9Pilot && (!saved.selected || (saved.selected.length===1 && saved.selected[0]===8))){saved.selected=[9];saved.ch9Pilot=true;localStorage.setItem(KEY,JSON.stringify(saved));}
 let questions=[],selected=new Set(saved.selected||[9]),seen=new Set(saved.seen||[]),history=saved.history||[],favs=new Set(saved.favs||[]);
@@ -11,12 +21,12 @@ let current=null,tab="qp",scale=1.15,files=new Map(),renderToken=0;
 let mode=saved.mode||"P2", attempts=saved.attempts||{}, savedDirHandle=null;
 let sessions=saved.sessions||[], mcqSession=saved.mcqSession||null, paper2Grades=saved.paper2Grades||{};
 const SESSION_TARGET=20;
-const save=()=>localStorage.setItem(KEY,JSON.stringify({selected:[...selected],seen:[...seen],history:history.slice(-500),favs:[...favs],ch9Pilot:true,mode,attempts,sessions:sessions.slice(-100),mcqSession,paper2Grades}));
+const save=()=>localStorage.setItem(KEY,JSON.stringify({selected:[...selected],seen:[...seen],history:history.slice(-500),favs:[...favs],ch9Pilot:true,allChaptersRollout:true,mode,attempts,sessions:sessions.slice(-100),mcqSession,paper2Grades}));
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const chapters=q=>(q.chapters||"").split(",").map(x=>Number(x.trim()));
 const paper=q=>q.source?.match(/9702\/(\d)/)?.[1]==="1"?"P1":"P2";
 function pool(){return questions.filter(q=>chapters(q).some(c=>selected.has(c))&&paper(q)===mode)}
-function sidebar(){const counts=Array.from({length:15},(_,i)=>questions.filter(q=>chapters(q).includes(i+1)).length);
+function sidebar(){const counts=Array.from({length:15},(_,i)=>questions.filter(q=>chapters(q).includes(i+1)&&paper(q)===mode).length);
  $("chapters").innerHTML=names.map((n,i)=>`<label class="chapter"><input type="checkbox" data-ch="${i+1}" ${selected.has(i+1)?"checked":""}><span>${String(i+1).padStart(2,"0")} &nbsp; ${esc(n)}</span><span class="count">${counts[i]}</span></label>`).join("");
  document.querySelectorAll("[data-ch]").forEach(el=>el.onchange=()=>{let n=Number(el.dataset.ch);el.checked?selected.add(n):selected.delete(n);save();stats()});
  stats()}
@@ -136,9 +146,10 @@ function refreshModeButtons(){
  for(const [m,id] of [["P1","switchP1"],["P2","switchP2"]]){const b=$(id);if(b)b.classList.toggle("chosen",mode===m)}
  document.body.classList.toggle("mode-p1",mode==="P1");
  const g=$("generate");if(g)g.textContent=mode==="P1"?"Generate MCQ →":"Generate question →";
+ if(questions.length&&$("chapters"))sidebar();
 }
 function setMode(m){
- mode=m;current=null;save();refreshModeButtons();renderPaper2Grade();
+ mode=m;current=null;save();refreshModeButtons();sidebar();renderPaper2Grade();
  $("heading").textContent=m==="P1"?"Paper 1 — MCQ drill":"Paper 2 — Structured questions";
  $("subheading").textContent=m==="P1"?"Choose chapters, answer A–D, receive immediate feedback.":"Original Cambridge questions and mark schemes.";
  $("paperBadge").textContent=m;$("marksBadge").textContent=m==="P1"?"1 mark":"— marks";
