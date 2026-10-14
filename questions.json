@@ -1065,7 +1065,9 @@
     "qp_clip": "15:390:790",
     "answer": "A",
     "paper_type": "P1",
-    "topic": "Paper 1 multiple choice"
+    "topic": "Paper 1 multiple choice",
+    "mcq_group": "kirchhoff-conservation",
+    "mcq_explanation": "Kirchhoff's first law concerns current at a junction: the algebraic sum of currents is zero because electric charge is conserved. The second law concerns energy around a complete loop. Hence A."
   },
   {
     "id": "s25_12_mcq_38",
@@ -1650,7 +1652,9 @@
     "qp_clip": "16:59:251",
     "answer": "A",
     "paper_type": "P1",
-    "topic": "Paper 1 multiple choice"
+    "topic": "Paper 1 multiple choice",
+    "mcq_group": "kirchhoff-conservation",
+    "mcq_explanation": "The first law follows from conservation of charge at a junction. The second law follows from conservation of energy around a loop. The correct pairing is charge / energy, so A."
   },
   {
     "id": "s22_12_mcq_37",
@@ -2250,7 +2254,9 @@
     "qp_clip": "16:459:652",
     "answer": "A",
     "paper_type": "P1",
-    "topic": "Paper 1 multiple choice"
+    "topic": "Paper 1 multiple choice",
+    "mcq_group": "kirchhoff-conservation",
+    "mcq_explanation": "The first law is charge conservation: total current entering a junction equals total current leaving it. The second law is energy conservation: the algebraic sum of potential changes in a closed loop is zero. Therefore A."
   },
   {
     "id": "w24_12_mcq_37",
@@ -2835,7 +2841,9 @@
     "qp_clip": "15:59:279",
     "answer": "C",
     "paper_type": "P1",
-    "topic": "Paper 1 multiple choice"
+    "topic": "Paper 1 multiple choice",
+    "mcq_group": "junction-current-calculation",
+    "mcq_explanation": "Use Kirchhoff's first law at the junction. The directions of the arrows give a resultant current in wire R of 2 A. Then use \\(Q=I\\Delta t\\): \\(Q=2\\times5=\\boxed{10\\ \\mathrm C}\\). Hence C."
   },
   {
     "id": "m25_12_mcq_36",
@@ -3435,7 +3443,9 @@
     "qp_clip": "16:59:246",
     "answer": "A",
     "paper_type": "P1",
-    "topic": "Paper 1 multiple choice"
+    "topic": "Paper 1 multiple choice",
+    "mcq_group": "kirchhoff-conservation",
+    "mcq_explanation": "Kirchhoff's first law states that current entering a junction equals current leaving it. Current is the flow of charge per second, so the underlying conserved quantity is charge, not energy or momentum. Therefore A."
   },
   {
     "id": "s23_13_mcq_36",
