@@ -244,7 +244,25 @@
     "ms_file": "9702_s22_ms_21.pdf",
     "ms_pages": "12",
     "topic": "First law; series power; LDR potential divider",
-    "explanation": "Start with Kirchhoff's first law: current entering a junction equals current leaving it. For the two series resistors, the current is the same, so compare powers using P=I^2 R. For the LDR circuit use I=5.4/1800=0.0030 A. The LDR has 9.0-5.4=3.6 V across it, giving R_L=3.6/0.0030=1200 ohm. As illumination increases, R_L falls, total resistance falls, current rises and the voltage across the fixed resistor increases."
+    "explanation": "Start with Kirchhoff's first law: current entering a junction equals current leaving it. For the two series resistors, the current is the same, so compare powers using P=I^2 R. For the LDR circuit use I=5.4/1800=0.0030 A. The LDR has 9.0-5.4=3.6 V across it, giving R_L=3.6/0.0030=1200 ohm. As illumination increases, R_L falls, total resistance falls, current rises and the voltage across the fixed resistor increases.",
+    "solution_steps": [
+      {
+        "title": "Kirchhoff's first law",
+        "body": "At any junction, the sum of currents entering equals the sum leaving: \\(\\sum I_{\\mathrm{in}}=\\sum I_{\\mathrm{out}}\\). This expresses conservation of charge."
+      },
+      {
+        "title": "The two resistors X and Y are in parallel",
+        "body": "Parallel components have the same potential difference. Hence \\(P=V^2/R\\); since \\(R_X>R_Y\\), resistor **Y** dissipates more power. From \\(R=\\rho L/A\\) (same material and length), **Y** also has the larger cross-sectional area."
+      },
+      {
+        "title": "Current and LDR resistance",
+        "body": "\\(I=5.4/1800=3.0\\times10^{-3}\\,\\mathrm A\\). Across the LDR, \\(V_L=9.0-5.4=3.6\\,\\mathrm V\\); therefore \\(R_L=3.6/(3.0\\times10^{-3})=\\boxed{1200\\,\\Omega}\\)."
+      },
+      {
+        "title": "Effect of brighter light",
+        "body": "The resistance of the LDR decreases. Series resistance decreases, so the circuit current rises. The p.d. across the fixed resistor \\(V=I\\times1800\\) consequently increases."
+      }
+    ]
   },
   {
     "id": "s22_22_q6",
@@ -257,7 +275,25 @@
     "ms_file": "9702_s22_ms_22.pdf",
     "ms_pages": "13",
     "topic": "Kirchhoff voltage law; switching a resistor network",
-    "explanation": "Apply Kirchhoff's second law to a closed loop: sum of electromotive forces equals sum of potential differences. Identify which resistors share current (series) and which share a potential difference (parallel). Compare the switch-open and switch-closed circuits by redrawing each configuration before applying V=IR."
+    "explanation": "Apply Kirchhoff's second law to a closed loop: sum of electromotive forces equals sum of potential differences. Identify which resistors share current (series) and which share a potential difference (parallel). Compare the switch-open and switch-closed circuits by redrawing each configuration before applying V=IR.",
+    "solution_steps": [
+      {
+        "title": "Loop law",
+        "body": "Write \\(\\sum\\mathcal E=\\sum IR\\) around a closed loop; the signs must follow your chosen direction."
+      },
+      {
+        "title": "Switch-open case",
+        "body": "Trace the actual conducting branches in Fig. 6.1 and redraw the active network. Decide which resistors have common current and which have common p.d. before applying \\(V=IR\\)."
+      },
+      {
+        "title": "Switch-closed case",
+        "body": "Repeat with the switch closed, checking whether a branch is bypassed. Apply both \\(I_\\mathrm{in}=I_\\mathrm{out}\\) and the loop rule if the circuit has a junction."
+      },
+      {
+        "title": "Self-check",
+        "body": "Compare both arrangements against the Cambridge mark scheme; explain the physical reason for any changed currents or p.d.s."
+      }
+    ]
   },
   {
     "id": "s24_21_q6",
@@ -270,7 +306,25 @@
     "ms_file": "9702_s24_ms_21.pdf",
     "ms_pages": "13-14",
     "topic": "Kirchhoff current law; series resistance and internal resistance",
-    "explanation": "Kirchhoff's first law expresses conservation of charge. For two series resistors the loop law gives V=V_1+V_2=I(R_1+R_2), so R_T=R_1+R_2. Here I=1.35/(10+15)=0.054 A and the lost volts are 1.50-1.35=0.15 V. Therefore r=0.15/0.054≈2.8 ohm. When R_3 is added in the configuration shown, reconsider the external equivalent resistance before judging the cell current and terminal p.d."
+    "explanation": "Kirchhoff's first law expresses conservation of charge. For two series resistors the loop law gives V=V_1+V_2=I(R_1+R_2), so R_T=R_1+R_2. Here I=1.35/(10+15)=0.054 A and the lost volts are 1.50-1.35=0.15 V. Therefore r=0.15/0.054≈2.8 ohm. When R_3 is added in the configuration shown, reconsider the external equivalent resistance before judging the cell current and terminal p.d.",
+    "solution_steps": [
+      {
+        "title": "First law",
+        "body": "\\(\\sum I_{\\mathrm{in}}=\\sum I_{\\mathrm{out}}\\). No charge accumulates at a junction in the steady state."
+      },
+      {
+        "title": "Derive the series rule",
+        "body": "Using the loop law, \\(V=V_1+V_2\\). Since the current \\(I\\) is the same in each series resistor, \\(IR_T=IR_1+IR_2\\), hence \\(\\boxed{R_T=R_1+R_2}\\)."
+      },
+      {
+        "title": "Calculate internal resistance",
+        "body": "\\(I=1.35/(10+15)=0.054\\,\\mathrm A\\). Lost volts: \\(E-V=1.50-1.35=0.15\\,\\mathrm V\\). Hence \\(r=(E-V)/I=0.15/0.054=\\boxed{2.8\\,\\Omega}\\) to two significant figures."
+      },
+      {
+        "title": "Adding the extra resistor",
+        "body": "The external equivalent resistance decreases, so current from the cell **increases**. Because the cell has internal resistance, \\(Ir\\) increases and the terminal p.d. \\(V=E-Ir\\) **decreases**."
+      }
+    ]
   },
   {
     "id": "s24_22_q5",
@@ -283,7 +337,25 @@
     "ms_file": "9702_s24_ms_22.pdf",
     "ms_pages": "11",
     "topic": "Kirchhoff second law; variable resistor and thermistor",
-    "explanation": "Use the second law around the series loop: E=V_X+V_Y. For part (b)(i), V_X=9.0-4.0=5.0 V. Hence R_X=5.0/(1.1×10^-2)≈455 ohm. To find the new p.d. of Y, read its resistance at 190 Celsius from the graph, calculate I=9.0/(R_X+R_Y), then V_Y=IR_Y. Increasing R_X reduces the series current, so V_Y decreases when R_Y remains fixed."
+    "explanation": "Use the second law around the series loop: E=V_X+V_Y. For part (b)(i), V_X=9.0-4.0=5.0 V. Hence R_X=5.0/(1.1×10^-2)≈455 ohm. To find the new p.d. of Y, read its resistance at 190 Celsius from the graph, calculate I=9.0/(R_X+R_Y), then V_Y=IR_Y. Increasing R_X reduces the series current, so V_Y decreases when R_Y remains fixed.",
+    "solution_steps": [
+      {
+        "title": "Kirchhoff's second law",
+        "body": "For any closed loop, the algebraic sum of electromotive forces equals the sum of potential differences. Equivalently, \\(\\sum\\Delta V=0\\)."
+      },
+      {
+        "title": "Calculate the resistance of X",
+        "body": "The components are in series: \\(V_X=9.0-4.0=5.0\\,\\mathrm V\\). Thus \\(R_X=V_X/I=5.0/(1.1\\times10^{-2})\\approx\\boxed{450\\,\\Omega}\\), consistent with the official rounded result."
+      },
+      {
+        "title": "Read the graph and find the new p.d.",
+        "body": "At \\(190\\,^\\circ\\mathrm C\\), read \\(R_Y\\approx25\\,\\Omega\\). Use the potential-divider relationship \\(V_Y=E\\,R_Y/(R_X+R_Y)=9.0(25)/(450+25)=\\boxed{0.47\\,\\mathrm V}\\)."
+      },
+      {
+        "title": "Explain the final change",
+        "body": "Increasing \\(R_X\\) increases total series resistance, so current falls. Since \\(R_Y\\) is constant at that temperature, \\(V_Y=IR_Y\\) **decreases**."
+      }
+    ]
   },
   {
     "id": "s24_23_q5",
@@ -296,7 +368,25 @@
     "ms_file": "9702_s24_ms_23.pdf",
     "ms_pages": "11-12",
     "topic": "Kirchhoff laws; parallel resistance and cell internal resistance",
-    "explanation": "The second law is conservation of energy around a loop. For the parallel resistors, first law gives I=I_1+I_2 and both branches have the same p.d., V. Using I=V/R_T, I_1=V/R_1 and I_2=V/R_2 yields 1/R_T=1/R_1+1/R_2. For the numerical parts use E=I(R_T+r) and terminal p.d. V=E-Ir. Adding a parallel resistor reduces R_T, increases the cell current, and (for nonzero r) decreases terminal p.d."
+    "explanation": "The second law is conservation of energy around a loop. For the parallel resistors, first law gives I=I_1+I_2 and both branches have the same p.d., V. Using I=V/R_T, I_1=V/R_1 and I_2=V/R_2 yields 1/R_T=1/R_1+1/R_2. For the numerical parts use E=I(R_T+r) and terminal p.d. V=E-Ir. Adding a parallel resistor reduces R_T, increases the cell current, and (for nonzero r) decreases terminal p.d.",
+    "solution_steps": [
+      {
+        "title": "State the second law",
+        "body": "The sum of electromotive forces around a closed loop equals the sum of potential differences; it follows from conservation of energy."
+      },
+      {
+        "title": "Parallel combination proof",
+        "body": "At the junction, \\(I=I_1+I_2\\) (first law). The p.d. is common to each parallel branch: \\(V=IR_T=I_1R_1=I_2R_2\\). Substituting currents gives \\(\\boxed{1/R_T=1/R_1+1/R_2}\\)."
+      },
+      {
+        "title": "Cell with internal resistance",
+        "body": "Calculate \\(R_T\\) for the external parallel combination. Then use \\(E=I(R_T+r)\\) and \\(V=E-Ir\\) as required."
+      },
+      {
+        "title": "Adding a further parallel branch",
+        "body": "Equivalent external resistance decreases; the current through the cell increases. Because the cell loses more volts internally (\\(Ir\\)), its terminal p.d. **decreases**."
+      }
+    ]
   },
   {
     "id": "w22_23_q5",
@@ -309,7 +399,25 @@
     "ms_file": "9702_w22_ms_23.pdf",
     "ms_pages": "11-13",
     "topic": "Kirchhoff second law; cells in parallel and resistance",
-    "explanation": "For three identical cells in parallel, the equivalent electromotive force remains 1.5 V while the effective internal resistance is 0.590/3≈0.197 ohm. Since the total circuit resistance is 2.2 ohm, external resistance is ≈2.0 ohm. Current is I=1.5/2.2≈0.682 A. For cylindrical sections of equal length and material, R=ρL/A so the resistance ratio is the inverse area ratio. For drift speed, I=nAvq; identical current means drift speed is inversely proportional to cross-sectional area."
+    "explanation": "For three identical cells in parallel, the equivalent electromotive force remains 1.5 V while the effective internal resistance is 0.590/3≈0.197 ohm. Since the total circuit resistance is 2.2 ohm, external resistance is ≈2.0 ohm. Current is I=1.5/2.2≈0.682 A. For cylindrical sections of equal length and material, R=ρL/A so the resistance ratio is the inverse area ratio. For drift speed, I=nAvq; identical current means drift speed is inversely proportional to cross-sectional area.",
+    "solution_steps": [
+      {
+        "title": "Second law",
+        "body": "The sum of electromotive forces equals the sum of potential differences around a closed loop."
+      },
+      {
+        "title": "Cells in parallel",
+        "body": "For three identical cells in parallel, their net e.m.f. remains \\(1.5\\,\\mathrm V\\) and internal resistances are in parallel: \\(r_\\mathrm{eq}=0.590/3=0.197\\,\\Omega\\)."
+      },
+      {
+        "title": "External conductor resistance and current",
+        "body": "Total resistance \\(2.2\\,\\Omega\\) includes internal resistance. Thus \\(R_\\mathrm{conductor}=2.2-0.197\\approx\\boxed{2.0\\,\\Omega}\\). Then \\(I=E/R_\\mathrm{total}=1.5/2.2\\approx\\boxed{0.68\\,\\mathrm A}\\)."
+      },
+      {
+        "title": "Geometric ratios",
+        "body": "For the same material and length, \\(R\\propto1/A\\propto1/d^2\\), so \\(R_A/R_B=(d_B/d_A)^2=(7.6/4.3)^2\\approx3.1\\). Since current in A and B is equal, \\(v\\propto1/A\\), giving the same ratio for \\(v_A/v_B\\)."
+      }
+    ]
   },
   {
     "id": "w25_21_q5",
@@ -322,7 +430,25 @@
     "ms_file": "9702_w25_ms_21.pdf",
     "ms_pages": "12",
     "topic": "Kirchhoff first law; thermistor and internal resistance",
-    "explanation": "At a junction, incoming current equals outgoing current. A negative-temperature-coefficient thermistor has falling resistance as temperature increases. Analyse which branches are in parallel and which elements are in series, then use the first law for the current split. For the cell, terminal p.d. is V=E-Ir. If the cell current grows, the lost volts Ir grow and the terminal p.d. falls."
+    "explanation": "At a junction, incoming current equals outgoing current. A negative-temperature-coefficient thermistor has falling resistance as temperature increases. Analyse which branches are in parallel and which elements are in series, then use the first law for the current split. For the cell, terminal p.d. is V=E-Ir. If the cell current grows, the lost volts Ir grow and the terminal p.d. falls.",
+    "solution_steps": [
+      {
+        "title": "The first law",
+        "body": "At a junction, total incoming current equals total outgoing current."
+      },
+      {
+        "title": "Negative-temperature-coefficient thermistor",
+        "body": "As temperature rises, its resistance falls; sketch a decreasing, curved resistance–temperature graph starting at \\(R_0\\)."
+      },
+      {
+        "title": "Analyse the circuit",
+        "body": "Redraw the current paths and identify series and parallel parts before calculating. Apply \\(I_\\mathrm{in}=\\sum I_\\mathrm{out}\\) at junctions and \\(V=IR\\) in each branch."
+      },
+      {
+        "title": "Include internal resistance",
+        "body": "Terminal potential difference is \\(V=E-Ir\\). Evaluate how the cell current changes when thermistor resistance drops, then how \\(Ir\\) and \\(V\\) change."
+      }
+    ]
   },
   {
     "id": "w25_22_q5",
@@ -335,7 +461,29 @@
     "ms_file": "9702_w25_ms_22.pdf",
     "ms_pages": "13-14",
     "topic": "Kirchhoff first law; LDR branches and terminal potential difference",
-    "explanation": "Kirchhoff first law: total battery current equals the sum of branch currents. The terminal p.d. is V=E-Ir=5.0-(0.038)(4.7)=4.82 V, hence about 4.8 V. Use the resistor X current I_1=V/100, then Kirchhoff's law to determine I_2 with the actual branch arrangement shown in Fig. 5.1. For the power of Y, use P=I_2²R_Y. Decreasing incident light increases the LDR resistance, changing the total current and therefore the lost volts Ir."
+    "explanation": "Kirchhoff first law: total battery current equals the sum of branch currents. The terminal p.d. is V=E-Ir=5.0-(0.038)(4.7)=4.82 V, hence about 4.8 V. Use the resistor X current I_1=V/100, then Kirchhoff's law to determine I_2 with the actual branch arrangement shown in Fig. 5.1. For the power of Y, use P=I_2²R_Y. Decreasing incident light increases the LDR resistance, changing the total current and therefore the lost volts Ir.",
+    "solution_steps": [
+      {
+        "title": "First law",
+        "body": "At a junction, the sum of currents entering equals the sum of currents leaving: \\(\\sum I_\\mathrm{in}=\\sum I_\\mathrm{out}\\)."
+      },
+      {
+        "title": "Terminal p.d. of the battery",
+        "body": "\\(V=E-Ir=5.0-(38\\times10^{-3})(4.7)=4.8214\\,\\mathrm V\\approx\\boxed{4.8\\,\\mathrm V}\\)."
+      },
+      {
+        "title": "Split of current between branches",
+        "body": "Read \\(R_Z=120\\,\\Omega\\) from the graph. The branch containing X and Z has current \\(I_1=4.8/(100+120)\\approx0.022\\,\\mathrm A\\). From Kirchhoff's first law, \\(I_2=0.038-I_1\\approx\\boxed{0.016\\,\\mathrm A}\\)."
+      },
+      {
+        "title": "Power in resistor Y",
+        "body": "\\(P_Y=I_2V\\approx0.016\\times4.8=\\boxed{0.077\\,\\mathrm W}\\)."
+      },
+      {
+        "title": "Reducing illumination",
+        "body": "The LDR resistance rises; battery current falls. Thus the internal voltage loss \\(Ir\\) falls and terminal p.d. \\(V=E-Ir\\) **increases**."
+      }
+    ]
   },
   {
     "id": "w24_21_q7",
@@ -348,6 +496,20 @@
     "ms_file": "9702_w24_ms_21.pdf",
     "ms_pages": "11",
     "topic": "Kirchhoff loop rule; series and parallel resistors with internal resistance",
-    "explanation": "Use Kirchhoff's second law: E=I(R_ext+r) for the cell. In series, R_ext=R_1+R_2; in parallel, 1/R_ext=1/R_1+1/R_2. In each circuit compute the new total resistance before calculating current. Remember that adding a parallel path decreases equivalent external resistance, but a real cell also has internal resistance."
+    "explanation": "Use Kirchhoff's second law: E=I(R_ext+r) for the cell. In series, R_ext=R_1+R_2; in parallel, 1/R_ext=1/R_1+1/R_2. In each circuit compute the new total resistance before calculating current. Remember that adding a parallel path decreases equivalent external resistance, but a real cell also has internal resistance.",
+    "solution_steps": [
+      {
+        "title": "Series circuit",
+        "body": "Use the loop rule \\(E=I(R_1+R_2+r)\\). The cell's internal resistance \\(r\\) must be included in the total."
+      },
+      {
+        "title": "Parallel circuit",
+        "body": "Once the two external resistors are reconnected in parallel, use \\(R_\\mathrm{ext}=R_1R_2/(R_1+R_2)\\), followed by \\(I=E/(R_\\mathrm{ext}+r)\\)."
+      },
+      {
+        "title": "Compare cell currents",
+        "body": "The external equivalent resistance decreases in the parallel arrangement, so cell current rises. Follow the original circuit diagram carefully when describing the new branch currents."
+      }
+    ]
   }
 ]
