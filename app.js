@@ -4,9 +4,11 @@ const $=id=>document.getElementById(id);
 const names=["Kinematics","Accelerated motion","Dynamics","Forces, vectors & moments","Work, energy & power","Momentum","Matter & materials","Current, p.d. & resistance","Kirchhoff's laws","Resistance & resistivity","Practical circuits","Waves","Superposition","Stationary waves","Atomic & particle physics"];
 const KEY="mms_physics_web_v05";
 let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")}catch{}
-let questions=[],selected=new Set(saved.selected||[8]),seen=new Set(saved.seen||[]),history=saved.history||[],favs=new Set(saved.favs||[]);
+// Initial chapter-9 classroom rollout: migrate old Chapter-8-only preference once.
+if(!saved.ch9Pilot && (!saved.selected || (saved.selected.length===1 && saved.selected[0]===8))){saved.selected=[9];saved.ch9Pilot=true;localStorage.setItem(KEY,JSON.stringify(saved));}
+let questions=[],selected=new Set(saved.selected||[9]),seen=new Set(saved.seen||[]),history=saved.history||[],favs=new Set(saved.favs||[]);
 let current=null,tab="qp",scale=1.15,files=new Map(),renderToken=0;
-const save=()=>localStorage.setItem(KEY,JSON.stringify({selected:[...selected],seen:[...seen],history:history.slice(-500),favs:[...favs]}));
+const save=()=>localStorage.setItem(KEY,JSON.stringify({selected:[...selected],seen:[...seen],history:history.slice(-500),favs:[...favs],ch9Pilot:true}));
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const chapters=q=>(q.chapters||"").split(",").map(x=>Number(x.trim()));
 const paper=q=>q.source?.match(/9702\/(\d)/)?.[1]==="1"?"P1":"P2";
@@ -26,7 +28,17 @@ function pdfFile(name){return files.get((name||"").toLowerCase())}
 function pages(str){return String(str||"").split(",").flatMap(s=>{let [a,b]=s.trim().split("-").map(Number);return b?Array.from({length:b-a+1},(_,i)=>a+i):[a]}).filter(x=>x>0)}
 async function render(){const token=++renderToken,view=$("viewer");view.innerHTML="";
  if(!current){view.innerHTML='<div class="empty"><div class="emptyicon">∑</div><h2>Ready to practise?</h2><p>Generate a question to begin.</p></div>';return}
- if(tab==="solution"){const t=current.topic||"this topic";view.innerHTML=`<article class="solution"><h2>Study guidance</h2><p class="notice"><strong>Important:</strong> This is a general Chapter 8 revision guide, <em>not</em> a worked solution verified for this exact examination question. Use the official mark scheme for marking.</p><p><strong>Question focus:</strong> ${esc(t)}</p><h3>1 · Key definitions</h3><p>Electric current is the rate of flow of charge:</p><p>\\[I=\\frac{\\Delta Q}{\\Delta t}\\]</p><p>Potential difference is energy transferred per unit charge:</p><p>\\[V=\\frac{W}{Q}\\]</p><h3>2 · Select the relevant model</h3><p>Electrical power: \\[P=IV\\]</p><p>For mobile charge carriers (where relevant): \\[I=nAvq\\]</p><h3>3 · Check your work</h3><p>State units, show substitutions, use the correct significant figures, and compare your reasoning with the original mark scheme.</p></article>`;window.MathJax?.typesetPromise?.([view]);return}
+ if(tab==="solution"){
+ const steps=current.solution_steps;
+ if(steps?.length){
+   const content=steps.map((step,i)=>`<section class="solution-step"><h3>Step ${i+1} — ${esc(step.title)}</h3><p>${esc(step.body).replace(/\\*\\*(.*?)\\*\\*/g,"<strong>$1</strong>")}</p></section>`).join("");
+   view.innerHTML=`<article class="solution"><h2>Explained solution</h2><p class="notice">Teacher commentary for <strong>${esc(current.source)} · Q${esc(current.question)}</strong>. This is not the official Cambridge mark scheme. Read the original question and check the official marking points.</p>${content}</article>`;
+ } else {
+   view.innerHTML=`<article class="solution"><h2>Study guidance</h2><p class="notice">A question-specific explanation has not yet been prepared. For marking, use the <strong>Official mark scheme</strong> tab.</p><p><strong>Topic:</strong> ${esc(current.topic||"AS Physics")}</p><h3>Useful approach</h3><p>Read the circuit or diagram carefully, identify the physical quantities and choose the relevant equation. Show every substitution with SI units and check your reasoning against the official mark scheme.</p></article>`;
+ }
+ try{await window.MathJax?.typesetPromise?.([view]);}catch(err){console.warn("MathJax typesetting",err)}
+ return;
+ }
  const name=current[tab+"_file"],f=pdfFile(name);
  if(!f){view.innerHTML=`<div class="empty"><h2>Local PDF not found</h2><p>Expected: <strong>${esc(name)}</strong></p><p>Choose the folder containing your extracted QP and MS PDFs in the sidebar.<br>Files remain entirely on this device.</p></div>`;return}
  view.innerHTML='<div class="empty">Rendering original PDF pages…</div>';
