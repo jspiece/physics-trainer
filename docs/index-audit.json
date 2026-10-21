@@ -1,0 +1,345 @@
+{
+  "scope": "Metadata-only checks; no official answer, chapter, marks or PDF-page validation",
+  "total": 414,
+  "P1": 263,
+  "P2": 151,
+  "mcqExplanations": 5,
+  "structuredSolutions": 9,
+  "classifications": {
+    "unspecified": 223,
+    "checked-by-question-wording": 4,
+    "automatic-provisional": 187
+  },
+  "coverage": [
+    {
+      "chapter": 1,
+      "P1": 48,
+      "P2": 7
+    },
+    {
+      "chapter": 2,
+      "P1": 15,
+      "P2": 2
+    },
+    {
+      "chapter": 3,
+      "P1": 17,
+      "P2": 10
+    },
+    {
+      "chapter": 4,
+      "P1": 19,
+      "P2": 14
+    },
+    {
+      "chapter": 5,
+      "P1": 29,
+      "P2": 22
+    },
+    {
+      "chapter": 6,
+      "P1": 8,
+      "P2": 5
+    },
+    {
+      "chapter": 7,
+      "P1": 19,
+      "P2": 16
+    },
+    {
+      "chapter": 8,
+      "P1": 18,
+      "P2": 19
+    },
+    {
+      "chapter": 9,
+      "P1": 7,
+      "P2": 9
+    },
+    {
+      "chapter": 10,
+      "P1": 6,
+      "P2": 8
+    },
+    {
+      "chapter": 11,
+      "P1": 8,
+      "P2": 13
+    },
+    {
+      "chapter": 12,
+      "P1": 30,
+      "P2": 17
+    },
+    {
+      "chapter": 13,
+      "P1": 15,
+      "P2": 10
+    },
+    {
+      "chapter": 14,
+      "P1": 4,
+      "P2": 2
+    },
+    {
+      "chapter": 15,
+      "P1": 24,
+      "P2": 23
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "id": "s22_12_mcq_4",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s23_13_mcq_24",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w22_13_mcq_15",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s25_11_mcq_17",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_11_mcq_9",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w23_11_mcq_6",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w23_11_mcq_5",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_13_mcq_15",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w23_13_mcq_6",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_13_mcq_6",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w24_11_mcq_14",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w23_13_mcq_10",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_12_mcq_10",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "m24_12_mcq_8",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_12_mcq_12",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_13_mcq_37",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s24_13_mcq_34",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s23_12_mcq_33",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_12_mcq_33",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "m24_12_mcq_31",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w23_12_mcq_28",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s24_12_mcq_28",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w22_13_mcq_28",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s24_13_mcq_29",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w22_12_mcq_29",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_13_mcq_31",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s23_11_mcq_29",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w23_13_mcq_29",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_11_mcq_28",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s23_12_mcq_26",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_13_mcq_28",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_11_mcq_27",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w24_13_mcq_5",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_11_mcq_11",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w22_13_mcq_12",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w22_11_mcq_15",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_11_mcq_15",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s25_13_mcq_9",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s24_11_mcq_11",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_11_mcq_14",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_13_mcq_14",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s24_11_mcq_22",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s25_11_mcq_23",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_13_mcq_20",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w23_11_mcq_18",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "m24_12_mcq_23",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s23_12_mcq_18",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w24_13_mcq_18",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s25_11_mcq_20",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_11_mcq_18",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_13_mcq_18",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s23_12_mcq_15",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_13_mcq_8",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s24_11_mcq_20",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s24_12_mcq_7",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s25_11_mcq_39",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w23_13_mcq_39",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s24_13_mcq_38",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s25_13_mcq_40",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w22_13_mcq_38",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "s22_11_mcq_38",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_11_mcq_39",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    },
+    {
+      "id": "w25_13_mcq_39",
+      "message": "Large crop (>650 PDF points); check extra questions / missing continuation"
+    }
+  ]
+}
