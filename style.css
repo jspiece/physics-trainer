@@ -57,3 +57,11 @@
 .saved-session-row{display:flex;gap:12px;justify-content:space-between;align-items:center;border-bottom:1px solid #e4e9f1;padding:10px 2px;font-size:12px}
 .saved-session-row span{color:#52637c}
 .saved-sessions-dialog>button{margin-top:15px}
+
+/* Stability and tablet readability */
+.viewer>canvas{max-width:100%;height:auto}
+.mcq-top{flex-wrap:wrap}.mcq-top button{font-size:12px}
+.solution-step p,.solution>p{white-space:pre-line}
+dialog table{border-collapse:collapse;width:100%;font-size:13px}dialog th,dialog td{text-align:left;padding:9px;border-bottom:1px solid #dce4ef}
+#status{color:#425878;max-width:75%}button:focus-visible,input:focus-visible{outline:3px solid #e8ab31;outline-offset:3px}
+@media(max-width:650px){.toolbar{align-items:flex-start;gap:10px;flex-wrap:wrap}.tabs{flex-wrap:wrap}.zoom{margin:5px 0 5px auto}.saved-session-row{flex-wrap:wrap}.chapter{min-height:36px}.top h1{overflow-wrap:anywhere}}
