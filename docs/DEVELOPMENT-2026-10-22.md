@@ -1,6 +1,6 @@
 # Development update — 22 October 2026
 
-This extends the existing development branch and draft PR, before production publication.
+This extends the stability baseline already merged through PR #1. The changes are on `dev/mcq-explanations-timer-restart`, prepared for a separate draft PR before production publication.
 
 ## MCQ explanations and source verification
 
