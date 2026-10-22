@@ -75,3 +75,52 @@ test('MCQ PDF failure leaves answers disabled; review mode never enables scoring
 test('MCQ invalid crop reports a failure and still releases PDF resources',async()=>{
  const h=harness();await h.run(`mode="P1";current=${JSON.stringify(fixture[0])};current.qp_clip="1:900:950";files.set("fixture.pdf",{arrayBuffer:async()=>new ArrayBuffer(0)});render()`);assert.match(h.node('mcqPictures').textContent,/Invalid question crop/);assert.equal(h.destroyed(),1);
 });
+test('optional timer starts only on a rendered, active, unlocked question and stops at feedback',()=>{
+ const h=sessionHarness();let now=10000;h.context.Date=class extends Date{static now(){return now}};
+ h.run('nextMcq();practiceUnlocked=true;timerEnabled=true;syncClock()');assert.equal(h.run('mcqSession.clock.runningSince'),null);
+ h.run('renderReadyId=current.id;syncClock()');assert.equal(h.run('mcqSession.clock.runningSince'),10000);
+ now=13500;h.run('recordMcq(current,"A")');assert.equal(h.run('clockElapsed(mcqSession)'),3500);assert.equal(h.run('mcqSession.clock.runningSince'),null);
+ now=30000;assert.equal(h.run('clockElapsed(mcqSession)'),3500);
+});
+test('timer respects manual pause, disabled setting and hidden tab; clock format supports long sessions',()=>{
+ const h=sessionHarness();let now=1000;h.context.Date=class extends Date{static now(){return now}};
+ h.run('nextMcq();practiceUnlocked=true;timerEnabled=true;renderReadyId=current.id;syncClock()');now=3000;
+ h.run('mcqSession.clock.pausedByUser=true;syncClock()');assert.equal(h.run('clockElapsed(mcqSession)'),2000);
+ now=8000;h.run('syncClock()');assert.equal(h.run('clockElapsed(mcqSession)'),2000);
+ h.run('mcqSession.clock.pausedByUser=false;document.hidden=true;syncClock()');assert.equal(h.run('mcqSession.clock.runningSince'),null);
+ h.run('document.hidden=false;syncClock()');assert.equal(h.run('mcqSession.clock.runningSince'),8000);
+ now=9000;h.run('timerEnabled=false;syncClock()');assert.equal(h.run('clockElapsed(mcqSession)'),3000);
+ assert.equal(h.run('formatDuration(3661000)'),'61:01');
+});
+test('restoring timer state excludes downtime and keeps saved elapsed time',()=>{
+ const h=harness({mcqSession:{chapters:[1],answers:[],limit:20,clock:{elapsedMs:7000,runningSince:1}}});assert.equal(h.run('clockElapsed(mcqSession)'),7000);assert.equal(h.run('mcqSession.clock.runningSince'),null);
+});
+test('MCQ restart archives partial results and resets clock without deleting attempts or favourites',()=>{
+ const h=sessionHarness({favs:['q0']});h.run('nextMcq();recordMcq(current,"B");mcqSession.clock={elapsedMs:4500,runningSince:null};restartPractice()');assert.equal(h.run('sessions.length'),1);assert.equal(h.run('sessions[0].reason'),'restarted');assert.equal(h.run('sessions[0].elapsedMs'),4500);assert.equal(h.run('mcqSession.answers.length'),0);assert.equal(h.run('clockElapsed(mcqSession)'),0);assert.equal(h.run('Object.keys(attempts).length'),1);assert.equal(h.run('favs.has("q0")'),true);
+});
+test('cancelled restart changes neither current question nor session results',()=>{
+ const h=sessionHarness();h.context.confirm=()=>false;h.run('nextMcq();globalThis.before=JSON.stringify(mcqSession);restartPractice()');assert.equal(h.run('JSON.stringify(mcqSession)===before'),true);assert.equal(h.run('sessions.length'),0);
+});
+test('Paper 2 restarts keep prior marks, freeze chapters, do not repeat questions within a session',()=>{
+ const h=harness();const q=fixture.slice(0,3).map((v,i)=>({...v,id:'p'+i,source:'9702/22/M/J/25',chapters:i===2?'2':'1',marks:'5'}));
+ h.run(`questions=${JSON.stringify(q)};mode="P2";selected=new Set([1]);open=q=>{current=q;save()};stats=()=>{};generate();renderPaper2Grade();$("paper2Score").value="3";$("saveP2Grade").onclick();globalThis.first=current.id;selected=new Set([2]);generate()`);
+ assert.notEqual(h.run('current.id'),h.run('first'));assert.equal(h.run('current.chapters'),'1');assert.equal(h.run('structuredSession.answers.length'),1);
+ h.run('restartPractice()');assert.equal(h.run('structuredSessions.length'),1);assert.equal(h.run('structuredSessions[0].answers[0].score'),3);assert.equal(h.run('paper2Grades[first].score'),3);assert.equal(h.run('current.chapters'),'2');assert.equal(h.run('structuredSession.answers.length'),0);
+ const restored=harness(h.stored());assert.equal(restored.run('structuredSession.questionIds.length'),1);assert.equal(restored.run('structuredSessions[0].answers[0].score'),3);
+});
+test('Paper 2 timer pauses for mark scheme and assessment, old history cannot grade current session',()=>{
+ const h=harness();h.run('mode="P2";practiceUnlocked=true;timerEnabled=true;current={id:"p0",source:"9702/22/M/J/25",marks:"5"};structuredSession={chapters:[1],questionIds:["p0"],answers:[],pendingId:"p0",ended:false};renderReadyId=current.id;tab="qp";syncClock()');assert.ok(h.run('structuredSession.clock.runningSince!=null'));
+ h.run('tab="ms";syncClock()');assert.equal(h.run('structuredSession.clock.runningSince'),null);
+ h.run('tab="qp";renderPaper2Grade();$("paper2Score").value="0";$("saveP2Grade").onclick()');assert.equal(h.run('structuredSession.answers[0].score'),0);assert.equal(h.run('structuredSession.clock.runningSince'),null);
+ h.run('current={id:"old",source:"9702/22/M/J/25",marks:"5"};renderPaper2Grade();$("paper2Score").value="2";$("saveP2Grade").onclick()');assert.equal(h.run('structuredSession.answers.length'),1);
+});
+test('all MCQs have source-linked explanations and official-letter provenance; ambiguous item excluded',()=>{
+ const qs=JSON.parse(fs.readFileSync('questions.json','utf8'));const mcqs=qs.filter(q=>q.paper_type==='P1');assert.equal(mcqs.length,263);
+ for(const q of mcqs){assert.ok(q.mcq_explanation.length>60);assert.equal(q.answer_verification.status,'checked-against-official-ms');assert.equal(q.answer_verification.file,q.ms_file);assert.ok(q.answer_verification.page>=2);assert.ok(q.explanation_review)}
+ const h=sessionHarness();h.run('questions[0].excluded_from_practice=true;nextMcq()');assert.notEqual(h.run('current.id'),'q0');assert.equal(h.run('recordMcq(questions[0],"A")'),false);
+ assert.deepEqual(mcqs.filter(q=>q.excluded_from_practice).map(q=>q.id),['s23_13_mcq_15']);
+});
+test('regrading the same Paper 2 question after restart cannot overwrite archived assessment',()=>{
+ const h=harness();h.run('questions=[{id:"p0",source:"9702/22/M/J/25",chapters:"1",marks:"5"}];mode="P2";selected=new Set([1]);open=q=>{current=q;save()};stats=()=>{};generate();renderPaper2Grade();$("paper2Score").value="1";$("saveP2Grade").onclick();restartPractice();renderPaper2Grade();$("paper2Score").value="4";$("saveP2Grade").onclick()');
+ assert.equal(h.run('structuredSessions[0].answers[0].score'),1);assert.equal(h.run('paper2Grades.p0.score'),4);assert.equal(h.run('structuredSession.answers[0].score'),4);
+});

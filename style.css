@@ -65,3 +65,5 @@
 dialog table{border-collapse:collapse;width:100%;font-size:13px}dialog th,dialog td{text-align:left;padding:9px;border-bottom:1px solid #dce4ef}
 #status{color:#425878;max-width:75%}button:focus-visible,input:focus-visible{outline:3px solid #e8ab31;outline-offset:3px}
 @media(max-width:650px){.toolbar{align-items:flex-start;gap:10px;flex-wrap:wrap}.tabs{flex-wrap:wrap}.zoom{margin:5px 0 5px auto}.saved-session-row{flex-wrap:wrap}.chapter{min-height:36px}.top h1{overflow-wrap:anywhere}}
+
+.practice-controls{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:0 0 14px;font-size:13px}.practice-controls label{display:flex;align-items:center;gap:7px}.practice-controls button{padding:7px 10px}.practice-controls #restartSession{margin-left:auto}.practice-controls #practiceTime{font-variant-numeric:tabular-nums}.mcq-explanation small{display:block;margin-top:9px;font-size:11px;color:#52637c}

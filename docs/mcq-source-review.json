@@ -1,0 +1,2320 @@
+{
+  "review_date": "2026-10-22",
+  "scope": "263 official answer letters matched; teaching explanations read against supplied QPs and MSs. Chapter tags and crops are not certified. One source ambiguity excluded from new sessions. No original PDFs are published.",
+  "sources": [
+    {
+      "file": "9702_m24_ms_12.pdf",
+      "sha256": "00c35d10578642d907864fec83637fed15f04fad5bc5296819fda853570c1a28"
+    },
+    {
+      "file": "9702_m24_qp_12.pdf",
+      "sha256": "45dfa5047316aa6217a3378d29d589540ac793ff9ee5b221028e5b6ce73ae5dd"
+    },
+    {
+      "file": "9702_m25_ms_12.pdf",
+      "sha256": "0a5c0fe40b75792eae8359ca9ef1b48674ca751a0560f2840e18240577530f64"
+    },
+    {
+      "file": "9702_m25_qp_12.pdf",
+      "sha256": "2529336f5bb68a962b7f2dd89f885e48f561e12e9d51fb7ca5b8471a0883d6a1"
+    },
+    {
+      "file": "9702_s22_ms_11.pdf",
+      "sha256": "76fa9b8851c41e371c6b71c3168915ac7b97da3cedcebcfc31a429316a746e2f"
+    },
+    {
+      "file": "9702_s22_ms_12.pdf",
+      "sha256": "d1440a05333ca4a928ebf0e25dcba65b44599112dbe8c991acbb82eb52da00c8"
+    },
+    {
+      "file": "9702_s22_ms_13.pdf",
+      "sha256": "3c32b62198bf43cf71967896b05f3e5b3e61042d99cb26e67612fa5be460a4c7"
+    },
+    {
+      "file": "9702_s22_qp_11.pdf",
+      "sha256": "da9b937c8630ffeff050c94db3b98863717b9ca952ef4b8a530f1990e0392ea5"
+    },
+    {
+      "file": "9702_s22_qp_12.pdf",
+      "sha256": "06a69bd1c093b7c5aaf80d4e60f1331ca77f69a94acf808384789065db50814e"
+    },
+    {
+      "file": "9702_s22_qp_13.pdf",
+      "sha256": "e13881cf290b83f7eafc600986bf2737d74d7df5f4e665a54012e023c52b70d3"
+    },
+    {
+      "file": "9702_s23_ms_11.pdf",
+      "sha256": "674c00ad90f33b16a9c1ff5c7367a3c9725dcf98b86c4b87e018a803e9bc6d79"
+    },
+    {
+      "file": "9702_s23_ms_12.pdf",
+      "sha256": "4ef27d29b0af3c89a3636efac08a992e8623910818e999858943f18bcc263a30"
+    },
+    {
+      "file": "9702_s23_ms_13.pdf",
+      "sha256": "c002891f923df441310f6f3472d2caa863ffeeade1f0f9a43004c3087caed2e0"
+    },
+    {
+      "file": "9702_s23_qp_11.pdf",
+      "sha256": "2e55e7a30d1e0a8f42db371eb6ac2877fdc908f5acbd90be498fa82dfc87a3f7"
+    },
+    {
+      "file": "9702_s23_qp_12.pdf",
+      "sha256": "731913944568b1f684629b1a2181ff964f93c76e075950d7b949869a63fba4e0"
+    },
+    {
+      "file": "9702_s23_qp_13.pdf",
+      "sha256": "07d2323a9ad5e47b6fa0b904680a62ed1555600f02d7ae034e985f20135c8ba3"
+    },
+    {
+      "file": "9702_s24_ms_11.pdf",
+      "sha256": "c3286c39a87917085f1a25092645afeb34cf1316d706ff8696d8814c61587903"
+    },
+    {
+      "file": "9702_s24_ms_12.pdf",
+      "sha256": "246a8612284b9ca42ef52b38f54ebdd39fbbc670bebc34d92786d0c1c60f9921"
+    },
+    {
+      "file": "9702_s24_ms_13.pdf",
+      "sha256": "180ac6074f2bdbe5a7725e2b32776544cd0f47063e9d5ae5d4687de573736d2f"
+    },
+    {
+      "file": "9702_s24_qp_11.pdf",
+      "sha256": "7887f00a08230707e441629a9fde4c0b66837abfde59bcb612a719ee47ad83e3"
+    },
+    {
+      "file": "9702_s24_qp_12.pdf",
+      "sha256": "28c2b3e6acd199243879d9a80e05417a0f1b7c664aa33004fbedb5a493fbad1d"
+    },
+    {
+      "file": "9702_s24_qp_13.pdf",
+      "sha256": "4c3cfa5071443d6ee894a03e81f4b3e719e7e0463700ff1ffec9d6f7a0276852"
+    },
+    {
+      "file": "9702_s25_ms_11.pdf",
+      "sha256": "65defe88d9f57b3f430a55b764ddfea6a7e60d0781a0cfbc249afbab217c07e0"
+    },
+    {
+      "file": "9702_s25_ms_12.pdf",
+      "sha256": "877af73805a13bcb8ac44dbd19fee60ee34ed8541d0ed9255922eeba2b35e4d0"
+    },
+    {
+      "file": "9702_s25_ms_13.pdf",
+      "sha256": "5726600203b2eccef16ec58e7e4af099e3b90e2d2dbb30578d560e80bd7e9abb"
+    },
+    {
+      "file": "9702_s25_qp_11.pdf",
+      "sha256": "1293e1acc88957d9a4092feb64b8de0b733eb318843c3e10100317f7f002db62"
+    },
+    {
+      "file": "9702_s25_qp_12.pdf",
+      "sha256": "41274fdcb9bcbab9e20b6b11ec93d26fc6b0e299530a1046e9149fd6820ec127"
+    },
+    {
+      "file": "9702_s25_qp_13.pdf",
+      "sha256": "22ea604717c7a9dc4e482a5e5d1d845e015e13d5a84a78049da3ee7c5768ffd7"
+    },
+    {
+      "file": "9702_w22_ms_11.pdf",
+      "sha256": "468ebd6947a2eaa220a0115479efe9489fa6797a614c0567894fae7b79dca669"
+    },
+    {
+      "file": "9702_w22_ms_12.pdf",
+      "sha256": "7d14d345945b9eedcca413eab4283d749394afc611fb93bf0fb7bc73551ab8fb"
+    },
+    {
+      "file": "9702_w22_ms_13.pdf",
+      "sha256": "7fb867bae7b39fd17e06555de3ab1abf7b1d22e752ef3ecc8421583808aa1413"
+    },
+    {
+      "file": "9702_w22_qp_11.pdf",
+      "sha256": "4ea8db3350d3cf09bbcdd43bf2620b039bfaaa0726eddd64581552d9d8e46d1b"
+    },
+    {
+      "file": "9702_w22_qp_12.pdf",
+      "sha256": "2c1bfc63b69704b5a1756201011e2496dd32c3bb495143627dd4f9ac9c9fa0fb"
+    },
+    {
+      "file": "9702_w22_qp_13.pdf",
+      "sha256": "a8b0a0ef7266105e5024fd6b300c7e765f39491eeba31eaa5d14474cc9c6e79e"
+    },
+    {
+      "file": "9702_w23_ms_11.pdf",
+      "sha256": "eff6bd3d62fd517c35b7a86f51ef1950c1c17532d33b46ec8db2b4827a044e79"
+    },
+    {
+      "file": "9702_w23_ms_12.pdf",
+      "sha256": "ff5caac01b8929885fc68f5c5b55a71c90d9a7d819c5035ae000cd33220763b5"
+    },
+    {
+      "file": "9702_w23_ms_13.pdf",
+      "sha256": "e5d20328da746b161fb5eca6707f78ff521b6e3a7853bee865a2302bb98aa674"
+    },
+    {
+      "file": "9702_w23_qp_11.pdf",
+      "sha256": "b5d147b4fec9bd4a112c6f08de076dcbb0e641c295c74910d3108f72083fd9b1"
+    },
+    {
+      "file": "9702_w23_qp_12.pdf",
+      "sha256": "3ed2f3e904c948d29d0b123c9daefd5e38c1782e830e34ada761baf8668ee317"
+    },
+    {
+      "file": "9702_w23_qp_13.pdf",
+      "sha256": "5f0d5431f1cccaf89c257fd8ae6dfe3e8f308350f3b1e484ec042ec21b6ef89b"
+    },
+    {
+      "file": "9702_w24_ms_11.pdf",
+      "sha256": "56ddd7c2ec75de148baff457757214c821d8666612f87293ac79856b61af4701"
+    },
+    {
+      "file": "9702_w24_ms_12.pdf",
+      "sha256": "0d41269673f845842f4d40b6fbf6ad8d3ebf4b5ffe7a04065dd3f246fef755da"
+    },
+    {
+      "file": "9702_w24_ms_13.pdf",
+      "sha256": "452a3372bf87676a8fd8ad10c4f1e1d75a979c1a4ba8c9728c25ae1d550cba18"
+    },
+    {
+      "file": "9702_w24_qp_11.pdf",
+      "sha256": "b5c5b44fc0be61790f48b769327c5826abe9d0c5c473844ff08a56a00b88e647"
+    },
+    {
+      "file": "9702_w24_qp_12.pdf",
+      "sha256": "9873f2204a16bed799d26a163b9a0ebb4e88e08d9f8578c252398f2133db89bc"
+    },
+    {
+      "file": "9702_w24_qp_13.pdf",
+      "sha256": "2e3d4fa812cc9bec9097af1d6ff5a5a060c50093ca42aa3d5faad19afa2bb136"
+    },
+    {
+      "file": "9702_w25_ms_11.pdf",
+      "sha256": "2e6dd80e0c4af0052acc472210c767e1d34e036673788c562f77e2d3e808d0fc"
+    },
+    {
+      "file": "9702_w25_ms_12.pdf",
+      "sha256": "f9d330230e7946ed4c7cddf38661073d253b447c9eafe96b50601ec71b980c9d"
+    },
+    {
+      "file": "9702_w25_ms_13.pdf",
+      "sha256": "d9c6e3f13f106305a31395bb16c132ae4ee548095d564fbf09f117529cd0678f"
+    },
+    {
+      "file": "9702_w25_qp_11.pdf",
+      "sha256": "4f145d803c0f27f69108c5684c15df8fd146b7f95b107a69722cd895e816e682"
+    },
+    {
+      "file": "9702_w25_qp_12.pdf",
+      "sha256": "08f0e5215c29dfdc1c41144eb7aeffbadb91d1ba34cbf147162b80a053fc7512"
+    },
+    {
+      "file": "9702_w25_qp_13.pdf",
+      "sha256": "7d2797733e8fb5b87b075c6b8e28cabdc7fa0bad8b556930ac139d0962d8e4b5"
+    }
+  ],
+  "questions": [
+    {
+      "id": "s25_12_mcq_1",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_2",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_3",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_4",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_5",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_6",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_7",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_8",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_9",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_10",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_11",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_12",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_13",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_14",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_15",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_16",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_17",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_18",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_19",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_20",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_21",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_22",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_23",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_24",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_25",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_26",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_27",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_28",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_29",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_30",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_31",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_32",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_33",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_34",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_35",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_36",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_37",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_38",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_39",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_12_mcq_40",
+      "qp_file": "9702_s25_qp_12.pdf",
+      "ms_file": "9702_s25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_1",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_2",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_3",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_4",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_5",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_6",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_7",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_8",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_9",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_10",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_11",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_12",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_13",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_14",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_15",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_16",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_17",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_18",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_19",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_20",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_21",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_22",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_23",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_24",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_25",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_26",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_27",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_28",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_29",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_30",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_31",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_32",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_33",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_34",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_35",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_36",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_37",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_38",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_39",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_12_mcq_40",
+      "qp_file": "9702_s22_qp_12.pdf",
+      "ms_file": "9702_s22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_1",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_2",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_3",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_4",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_5",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_6",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_7",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_8",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_9",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_10",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_11",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_12",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_13",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_14",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_15",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_16",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_17",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_18",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_19",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_20",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_21",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_22",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_23",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_24",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_25",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_26",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_27",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_28",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_29",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_30",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_31",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_32",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_33",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_34",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_35",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_36",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_37",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_38",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_39",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_12_mcq_40",
+      "qp_file": "9702_w24_qp_12.pdf",
+      "ms_file": "9702_w24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_1",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_2",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_3",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_4",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_5",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_6",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_7",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_8",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_9",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_10",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_11",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_12",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_13",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_14",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_15",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_16",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_17",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_18",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_19",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_20",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_21",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_22",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_23",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_24",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_25",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_26",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_27",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_28",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_29",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_30",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_31",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_32",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_33",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_34",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_35",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_36",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_37",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_38",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_39",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m25_12_mcq_40",
+      "qp_file": "9702_m25_qp_12.pdf",
+      "ms_file": "9702_m25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_1",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_2",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_3",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_4",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_5",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_6",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_7",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_8",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_9",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_10",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_11",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_12",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_13",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_14",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_15",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "source-ambiguity-flagged"
+    },
+    {
+      "id": "s23_13_mcq_16",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_17",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_18",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_19",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_20",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_21",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_22",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_23",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_24",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_25",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_26",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_27",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_28",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_29",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_30",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_31",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_32",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_33",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_34",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_35",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_36",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_37",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_38",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_39",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_13_mcq_40",
+      "qp_file": "9702_s23_qp_13.pdf",
+      "ms_file": "9702_s23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w22_13_mcq_15",
+      "qp_file": "9702_w22_qp_13.pdf",
+      "ms_file": "9702_w22_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_11_mcq_17",
+      "qp_file": "9702_s25_qp_11.pdf",
+      "ms_file": "9702_s25_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_11_mcq_9",
+      "qp_file": "9702_s22_qp_11.pdf",
+      "ms_file": "9702_s22_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w23_11_mcq_6",
+      "qp_file": "9702_w23_qp_11.pdf",
+      "ms_file": "9702_w23_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w23_11_mcq_5",
+      "qp_file": "9702_w23_qp_11.pdf",
+      "ms_file": "9702_w23_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_13_mcq_15",
+      "qp_file": "9702_s22_qp_13.pdf",
+      "ms_file": "9702_s22_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w23_13_mcq_6",
+      "qp_file": "9702_w23_qp_13.pdf",
+      "ms_file": "9702_w23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_13_mcq_6",
+      "qp_file": "9702_s22_qp_13.pdf",
+      "ms_file": "9702_s22_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_11_mcq_14",
+      "qp_file": "9702_w24_qp_11.pdf",
+      "ms_file": "9702_w24_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w23_13_mcq_10",
+      "qp_file": "9702_w23_qp_13.pdf",
+      "ms_file": "9702_w23_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_12_mcq_10",
+      "qp_file": "9702_w25_qp_12.pdf",
+      "ms_file": "9702_w25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m24_12_mcq_8",
+      "qp_file": "9702_m24_qp_12.pdf",
+      "ms_file": "9702_m24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_13_mcq_10",
+      "qp_file": "9702_w24_qp_13.pdf",
+      "ms_file": "9702_w24_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_12_mcq_12",
+      "qp_file": "9702_w25_qp_12.pdf",
+      "ms_file": "9702_w25_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_13_mcq_37",
+      "qp_file": "9702_s22_qp_13.pdf",
+      "ms_file": "9702_s22_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_13_mcq_34",
+      "qp_file": "9702_s24_qp_13.pdf",
+      "ms_file": "9702_s24_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_12_mcq_33",
+      "qp_file": "9702_s23_qp_12.pdf",
+      "ms_file": "9702_s23_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_12_mcq_33",
+      "qp_file": "9702_w25_qp_12.pdf",
+      "ms_file": "9702_w25_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m24_12_mcq_31",
+      "qp_file": "9702_m24_qp_12.pdf",
+      "ms_file": "9702_m24_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w23_12_mcq_28",
+      "qp_file": "9702_w23_qp_12.pdf",
+      "ms_file": "9702_w23_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_12_mcq_28",
+      "qp_file": "9702_s24_qp_12.pdf",
+      "ms_file": "9702_s24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w22_13_mcq_28",
+      "qp_file": "9702_w22_qp_13.pdf",
+      "ms_file": "9702_w22_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_13_mcq_29",
+      "qp_file": "9702_s24_qp_13.pdf",
+      "ms_file": "9702_s24_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w22_12_mcq_29",
+      "qp_file": "9702_w22_qp_12.pdf",
+      "ms_file": "9702_w22_ms_12.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_13_mcq_31",
+      "qp_file": "9702_s22_qp_13.pdf",
+      "ms_file": "9702_s22_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_11_mcq_29",
+      "qp_file": "9702_s23_qp_11.pdf",
+      "ms_file": "9702_s23_ms_11.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w23_13_mcq_29",
+      "qp_file": "9702_w23_qp_13.pdf",
+      "ms_file": "9702_w23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_11_mcq_28",
+      "qp_file": "9702_w25_qp_11.pdf",
+      "ms_file": "9702_w25_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_12_mcq_26",
+      "qp_file": "9702_s23_qp_12.pdf",
+      "ms_file": "9702_s23_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_13_mcq_28",
+      "qp_file": "9702_s22_qp_13.pdf",
+      "ms_file": "9702_s22_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_11_mcq_27",
+      "qp_file": "9702_s22_qp_11.pdf",
+      "ms_file": "9702_s22_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_13_mcq_5",
+      "qp_file": "9702_w24_qp_13.pdf",
+      "ms_file": "9702_w24_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_11_mcq_11",
+      "qp_file": "9702_s22_qp_11.pdf",
+      "ms_file": "9702_s22_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w22_13_mcq_12",
+      "qp_file": "9702_w22_qp_13.pdf",
+      "ms_file": "9702_w22_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w22_11_mcq_15",
+      "qp_file": "9702_w22_qp_11.pdf",
+      "ms_file": "9702_w22_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_11_mcq_15",
+      "qp_file": "9702_s22_qp_11.pdf",
+      "ms_file": "9702_s22_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_13_mcq_9",
+      "qp_file": "9702_s25_qp_13.pdf",
+      "ms_file": "9702_s25_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_11_mcq_11",
+      "qp_file": "9702_s24_qp_11.pdf",
+      "ms_file": "9702_s24_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_11_mcq_14",
+      "qp_file": "9702_w25_qp_11.pdf",
+      "ms_file": "9702_w25_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_13_mcq_14",
+      "qp_file": "9702_w25_qp_13.pdf",
+      "ms_file": "9702_w25_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_13_mcq_3",
+      "qp_file": "9702_s24_qp_13.pdf",
+      "ms_file": "9702_s24_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_11_mcq_22",
+      "qp_file": "9702_s24_qp_11.pdf",
+      "ms_file": "9702_s24_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_11_mcq_23",
+      "qp_file": "9702_s25_qp_11.pdf",
+      "ms_file": "9702_s25_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_13_mcq_20",
+      "qp_file": "9702_s22_qp_13.pdf",
+      "ms_file": "9702_s22_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w23_11_mcq_18",
+      "qp_file": "9702_w23_qp_11.pdf",
+      "ms_file": "9702_w23_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "m24_12_mcq_23",
+      "qp_file": "9702_m24_qp_12.pdf",
+      "ms_file": "9702_m24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_12_mcq_18",
+      "qp_file": "9702_s23_qp_12.pdf",
+      "ms_file": "9702_s23_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w24_13_mcq_18",
+      "qp_file": "9702_w24_qp_13.pdf",
+      "ms_file": "9702_w24_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_11_mcq_20",
+      "qp_file": "9702_s25_qp_11.pdf",
+      "ms_file": "9702_s25_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_11_mcq_18",
+      "qp_file": "9702_w25_qp_11.pdf",
+      "ms_file": "9702_w25_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_13_mcq_18",
+      "qp_file": "9702_w25_qp_13.pdf",
+      "ms_file": "9702_w25_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s23_12_mcq_15",
+      "qp_file": "9702_s23_qp_12.pdf",
+      "ms_file": "9702_s23_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_13_mcq_8",
+      "qp_file": "9702_s22_qp_13.pdf",
+      "ms_file": "9702_s22_ms_13.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_11_mcq_20",
+      "qp_file": "9702_s24_qp_11.pdf",
+      "ms_file": "9702_s24_ms_11.pdf",
+      "ms_page": 2,
+      "answer": "B",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_12_mcq_7",
+      "qp_file": "9702_s24_qp_12.pdf",
+      "ms_file": "9702_s24_ms_12.pdf",
+      "ms_page": 2,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_11_mcq_39",
+      "qp_file": "9702_s25_qp_11.pdf",
+      "ms_file": "9702_s25_ms_11.pdf",
+      "ms_page": 3,
+      "answer": "C",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w23_13_mcq_39",
+      "qp_file": "9702_w23_qp_13.pdf",
+      "ms_file": "9702_w23_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s24_13_mcq_38",
+      "qp_file": "9702_s24_qp_13.pdf",
+      "ms_file": "9702_s24_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s25_13_mcq_40",
+      "qp_file": "9702_s25_qp_13.pdf",
+      "ms_file": "9702_s25_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w22_13_mcq_38",
+      "qp_file": "9702_w22_qp_13.pdf",
+      "ms_file": "9702_w22_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "s22_11_mcq_38",
+      "qp_file": "9702_s22_qp_11.pdf",
+      "ms_file": "9702_s22_ms_11.pdf",
+      "ms_page": 3,
+      "answer": "D",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_11_mcq_39",
+      "qp_file": "9702_w25_qp_11.pdf",
+      "ms_file": "9702_w25_ms_11.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    },
+    {
+      "id": "w25_13_mcq_39",
+      "qp_file": "9702_w25_qp_13.pdf",
+      "ms_file": "9702_w25_ms_13.pdf",
+      "ms_page": 3,
+      "answer": "A",
+      "explanation_status": "qp-and-ms-reviewed"
+    }
+  ]
+}
