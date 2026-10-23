@@ -3,8 +3,12 @@
   "total": 414,
   "P1": 263,
   "P2": 151,
-  "mcqExplanations": 5,
+  "mcqExplanations": 263,
   "structuredSolutions": 9,
+  "officialMcqAnswersChecked": 263,
+  "excludedFromPractice": [
+    "s23_13_mcq_15"
+  ],
   "classifications": {
     "unspecified": 223,
     "checked-by-question-wording": 4,
